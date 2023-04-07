@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 function newImage(url, left, bottom) {
   let image = document.createElement('img')
   image.src = url
@@ -17,7 +25,7 @@ newImage('assets/well.png', 500, 425)
 
 function newItem(url, left, bottom){
     let image = newImage(url, left, bottom)
-image.addEventListener('click', function() {
+image.addEventListener('dblclick', function() {
     image.remove()
 })    
 }
@@ -25,6 +33,8 @@ image.addEventListener('click', function() {
 newItem('assets/sword.png', 500, 405)
 newItem('assets/shield.png', 165, 185)
 newItem('assets/staff.png', 600, 100)
+
+
 
 /*
 let sword = document.createElement ('img')
