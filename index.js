@@ -15,6 +15,28 @@ newImage('assets/pillar.png', 350, 100)
 newImage('assets/crate.png', 150, 200)
 newImage('assets/well.png', 500, 425)
 
+function newItem(url, left, bottom){
+    let image = newImage(url, left, bottom)
+image.addEventListener('click', function() {
+    image.remove()
+})    
+}
+
+newItem('assets/sword.png', 500, 405)
+newItem('assets/shield.png', 165, 185)
+newItem('assets/staff.png', 600, 100)
+
+/*
+let sword = document.createElement ('img')
+sword.src = 'assets/sword.png'
+sword.position = 'fixed'
+sword.left = '500px'
+sword.bottom = '405px'
+document.body.append(sword)
+
+sword.addEventListener('click', function() {
+    sword.remove()
+})*/
 
 
 /*let greenCharacter = document.createElement('img')
